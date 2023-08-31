@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>헬멧팀</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='styles/home.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="main">
+      <img
+        src="{{ url_for('static', filename='images/motorcycle-1690452_1920.jpg') }}"
+      />
+
+      <div id="contents">
+        <h1>[교통법규 위반 탐지]</h1>
+        <p>[AIB 18기] Team Project 2</p>
+        <a href="http://127.0.0.1:5000/main">Get Started</a>
+      </div>
+    </div>
+  </body>
+</html>

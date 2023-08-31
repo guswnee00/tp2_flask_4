@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>교통법규 위반사항 결과</title>
+    <link
+      href="{{ url_for('static', filename='styles/result.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="contents">
+        <!-- 메인 페이지로 돌아가기 -->
+        <a href="http://127.0.0.1:5000/main"
+          ><img
+            src="{{ url_for('static', filename='images/helmet.jpg') }}"
+            alt="돌아가기"
+          />
+        </a>
+        <span class="key">교</span>
+        <span class="key">통</span>
+        <span class="key">법</span>
+        <span class="key">규</span>
+        <span class="key">위</span>
+        <span class="key">반</span>
+        <span class="key">사</span>
+        <span class="key">항</span>
+      </div>
+      <!-- 업로드된 이미지와 예측된 이미지를 가로로 표시 -->
+      <div class="image-container">
+        {% if image_path %}
+        <div class="image">
+          <h2>Uploaded Image</h2>
+          <img src="{{ image_path }}" alt="Uploaded Image" width="100%" />
+        </div>
+        {% endif %}
+
+        <!-- 예측된 이미지 표시 -->
+        {% if predictions %}
+        <div class="image">
+          <h2>Predicted Image</h2>
+          <img src="{{ predictions }}" alt="Predicted Image" width="100%" />
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

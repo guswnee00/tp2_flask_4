@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>메인 페이지</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/main.css') }}"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div class="phenakistoscope"></div>
+      <div id="contents">
+        <!-- 이미지 업로드 폼 -->
+        <form method="POST" enctype="multipart/form-data">
+          <input type="file" name="image" accept="image/*" required />
+          <input type="submit" value="결과확인" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+

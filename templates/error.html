@@ -1,0 +1,44 @@
+<!-- 에러 페이지 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Error Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='styles/result.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 메인 페이지로 돌아가기 -->
+    <a href="http://127.0.0.1:5000/main"
+      ><img
+        src="{{ url_for('static', filename='images/helmet.jpg') }}"
+        alt="돌아가기"
+      />
+    </a>
+    <div id="main">
+      <div class="contents">
+        <span class="key">E</span>
+        <span class="key">r</span>
+        <span class="key">r</span>
+        <span class="key">o</span>
+        <span class="key">r</span>
+      </div>
+      <h2>Click to img going main</h2>
+    </div>
+    <ul>
+      {% with messages = get_flashed_messages() %} {% if messages %} {% for
+      message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %} {% endif %} {% endwith %}
+    </ul>
+  </body>
+</html>

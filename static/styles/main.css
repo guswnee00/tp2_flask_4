@@ -1,0 +1,220 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.phenakistoscope {
+  position: absolute;
+  top: 1%;
+  transform: translateY(-99%);
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+  background-image: radial-gradient(
+      ellipse 1% 1% at 50% 90%,
+      hsl(0 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 2.6% 1% at 56.9% 89.4%,
+      hsl(10 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 4.1% 1% at 63.7% 87.6%,
+      hsl(20 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 5.5% 1% at 70% 84.6%,
+      hsl(30 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 6.8% 1% at 75.7% 80.6%,
+      hsl(40 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 7.9% 1% at 80.6% 75.7%,
+      hsl(50 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8.8% 1% at 84.6% 70%,
+      hsl(60 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.5% 1% at 87.6% 63.7%,
+      hsl(70 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.9% 1% at 89.4% 56.9%,
+      hsl(80 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 10% 1% at 90% 50%,
+      hsl(90 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.9% 1% at 89.4% 43.1%,
+      hsl(100 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.5% 1% at 87.6% 36.3%,
+      hsl(110 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8.8% 1% at 84.6% 30%,
+      hsl(120 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 7.9% 1% at 80.6% 24.3%,
+      hsl(130 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 6.8% 1% at 75.7% 19.4%,
+      hsl(140 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 5.5% 1% at 70% 15.4%,
+      hsl(150 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 4.1% 1% at 63.7% 12.4%,
+      hsl(160 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 2.6% 1% at 56.9% 10.6%,
+      hsl(170 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 1% 1% at 50% 10%,
+      hsl(180 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 2.6% 1% at 43.1% 10.6%,
+      hsl(190 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 4.1% 1% at 36.3% 12.4%,
+      hsl(200 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 5.5% 1% at 30% 15.4%,
+      hsl(210 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 6.8% 1% at 24.3% 19.4%,
+      hsl(220 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 7.9% 1% at 19.4% 24.3%,
+      hsl(230 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8.8% 1% at 15.4% 30%,
+      hsl(240 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.5% 1% at 12.4% 36.3%,
+      hsl(250 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.9% 1% at 10.6% 43.1%,
+      hsl(260 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 10% 1% at 10% 50%,
+      hsl(270 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.9% 1% at 10.6% 56.9%,
+      hsl(280 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 9.5% 1% at 12.4% 63.7%,
+      hsl(290 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8.8% 1% at 15.4% 70%,
+      hsl(300 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 7.9% 1% at 19.4% 75.7%,
+      hsl(310 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 6.8% 1% at 24.3% 80.6%,
+      hsl(320 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 5.5% 1% at 30% 84.6%,
+      hsl(330 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 4.1% 1% at 36.3% 87.6%,
+      hsl(340 75% 75%) 90%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 2.6% 1% at 43.1% 89.4%,
+      hsl(350 75% 75%) 90%,
+      transparent 100%
+    );
+  animation: rotate 2s infinite steps(36);
+}
+
+@keyframes rotate {
+  to {
+    rotate: 1turn;
+  }
+}
+
+@media (max-width: 769px) {
+  a {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  .phenakistoscope {
+    max-width: 200px;
+  }
+}
